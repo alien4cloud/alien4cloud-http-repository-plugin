@@ -28,6 +28,11 @@ public class ConfigurableHttpArtifactResolver implements IConfigurableArtifactRe
     }
 
     @Override
+    public String getConfigurationUrl() {
+        return configuration.getUrl();
+    }
+
+    @Override
     public void setConfiguration(HttpArtifactResolverConfiguration configuration) {
         if (!isHttpURL(configuration.getUrl())) {
             throw new InvalidResolverConfigurationException("Resolver's configuration is incorrect, URL must be defined and begins with 'http' or 'https'");
