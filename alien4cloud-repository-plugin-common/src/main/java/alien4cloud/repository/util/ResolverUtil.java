@@ -18,7 +18,7 @@ import alien4cloud.component.repository.IConfigurableArtifactResolver;
 import alien4cloud.deployment.exceptions.UnresolvableArtifactException;
 import alien4cloud.repository.configuration.SimpleConfiguration;
 import alien4cloud.repository.exception.ResolverNotConfiguredException;
-import alien4cloud.tosca.normative.NormativeCredentialConstant;
+import org.alien4cloud.tosca.normative.constants.NormativeCredentialConstant;
 import alien4cloud.utils.FileUtil;
 
 public class ResolverUtil {
