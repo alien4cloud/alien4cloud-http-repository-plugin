@@ -38,7 +38,7 @@ public class HttpArtifactResolver implements IArtifactResolver {
         this.tempDir = ResolverUtil.createPluginTemporaryDownloadDir(tempDir, "artifacts/http");
     }
 
-    private CloseableHttpClient httpclient = HttpClients.custom().setRedirectStrategy(new DefaultRedirectStrategy()).build();
+    private CloseableHttpClient httpclient = HttpClients.custom().useSystemProperties().setRedirectStrategy(new DefaultRedirectStrategy()).build();
 
     @Override
     public String getResolverType() {
