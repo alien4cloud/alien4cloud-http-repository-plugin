@@ -8,10 +8,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.Map;
 
+import com.google.common.collect.ImmutableMap;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.StringUtils;
-import org.elasticsearch.common.collect.ImmutableMap;
 
 import alien4cloud.component.repository.IArtifactResolver;
 import alien4cloud.component.repository.IConfigurableArtifactResolver;
